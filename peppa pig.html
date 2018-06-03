@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Peppa Pig</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas> 
+    <script>
+        let ctx = document.querySelector('canvas').getContext('2d')
+        ctx.canvas.width = 1000
+        ctx.canvas.height = 550
+        ctx.lineWidth = 6
+        //arm
+        ctx.beginPath()
+        ctx.strokeStyle = '#FFE4E1'
+        ctx.lineWidth = 10
+        ctx.lineCap = 'round'
+        ctx.moveTo(580,325)
+        ctx.lineTo(665,368)
+        ctx.stroke()
+        ctx.beginPath()
+        ctx.strokeStyle = '#FFE4E1'
+        ctx.lineWidth = 10
+        ctx.moveTo(645,358)
+        ctx.lineTo(650,372)
+        ctx.stroke()
+        ctx.beginPath()
+        ctx.strokeStyle = '#FFE4E1'
+        ctx.lineWidth = 10
+        ctx.moveTo(645,358)
+        ctx.lineTo(665,348)
+        ctx.stroke()
+        //tail
+        ctx.beginPath()
+        ctx.strokeStyle = '#FFE4E1'
+        ctx.lineWidth = 10
+        ctx.lineCap = 'round'
+        ctx.arc(375,390,25,Math.PI/4,Math.PI*3/4,false)
+        ctx.arc(365,402,10,Math.PI,0,false)
+        ctx.arc(355,390,25,Math.PI/4,Math.PI*3/4,false)
+        ctx.stroke()
+        //legs
+        ctx.beginPath()
+        ctx.strokeStyle = '#FFE4E1'
+        ctx.lineWidth = 10
+        ctx.lineCap = 'round'
+        ctx.moveTo(440,435)
+        ctx.lineTo(440,490)
+        ctx.stroke()
+        ctx.beginPath()
+        ctx.strokeStyle = '#000000'
+        ctx.lineWidth = 15
+        ctx.lineCap = 'round'
+        ctx.moveTo(435,490)
+        ctx.lineTo(475,490)
+        ctx.stroke()
+        ctx.beginPath()
+        ctx.strokeStyle = '#FFE4E1'
+        ctx.lineWidth = 10
+        ctx.lineCap = 'round'
+        ctx.moveTo(545,435)
+        ctx.lineTo(545,490)
+        ctx.stroke()
+        ctx.beginPath()
+        ctx.strokeStyle = '#000000'
+        ctx.lineWidth = 15
+        ctx.lineCap = 'round'
+        ctx.moveTo(540,490)
+        ctx.lineTo(580,490)
+        ctx.stroke()
+        //cloth
+        ctx.beginPath()
+        ctx.fillStyle = '#FF3030'
+        ctx.strokeStyle = '#B22222'
+        ctx.lineWidth = 6
+        ctx.moveTo(565,298)
+        ctx.arcTo(620,350,610,500,200)
+        ctx.lineTo(380,445)
+        ctx.arcTo(400,320,450,250,200)
+        ctx.fill()
+        ctx.stroke()
+        //arm
+        ctx.beginPath()
+        ctx.strokeStyle = '#FFE4E1'
+        ctx.lineWidth = 10
+        ctx.lineCap = 'round'
+        ctx.moveTo(405,325)
+        ctx.lineTo(335,370)
+        ctx.stroke()
+        ctx.beginPath()
+        ctx.strokeStyle = '#FFE4E1'
+        ctx.lineWidth = 10
+        ctx.moveTo(355,358)
+        ctx.lineTo(350,372)
+        ctx.stroke()
+        ctx.beginPath()
+        ctx.strokeStyle = '#FFE4E1'
+        ctx.lineWidth = 10
+        ctx.moveTo(355,358)
+        ctx.lineTo(335,348)
+        ctx.stroke()
+        //head
+        ctx.beginPath()
+        ctx.fillStyle = '#FFC0CB'
+        ctx.strokeStyle = '#FF6EB4'
+        ctx.lineWidth = 6
+        ctx.arc(525,250,70,-Math.PI/4.5,Math.PI/4,false)
+        ctx.arcTo(500,350,425,300,110)
+        ctx.arcTo(340,220,580,50,100)
+        ctx.arcTo(530,100,700,120,210)
+        ctx.lineTo(640,175)
+        ctx.arcTo(605,203,550,220,180)
+        ctx.fill()
+        ctx.stroke()
+        //nose
+        ctx.beginPath()
+        ctx.fillStyle = '#FFC0CB'
+        ctx.strokeStyle = '#FF6EB4'
+        ctx.arc(602,150,45,Math.PI/4,-Math.PI*5/12,true)
+        ctx.arc(650,120,58,Math.PI*13/12,Math.PI*7/12,true)
+        ctx.fill()
+        ctx.stroke()
+        //eyes
+        ctx.beginPath()
+        ctx.strokeStyle = '#FF6EB4'
+        ctx.fillStyle = '#ffffff'
+        ctx.lineWidth = 6
+        ctx.arc(497,157,18,0,Math.PI*2,true)
+        ctx.fill()
+        ctx.stroke()
+        ctx.beginPath()
+        ctx.strokeStyle = '#000000'
+        ctx.lineWidth = 8
+        ctx.arc(493,159,4,0,Math.PI*2,true)
+        ctx.stroke()
+        ctx.beginPath()
+        ctx.strokeStyle = '#FF6EB4'
+        ctx.fillStyle = '#ffffff'
+        ctx.lineWidth = 6
+        ctx.arc(545,138,18,0,Math.PI*2,true)
+        ctx.fill()
+        ctx.stroke()
+        ctx.beginPath()
+        ctx.strokeStyle = '#000000'
+        ctx.lineWidth = 8
+        ctx.arc(540,140,4,0,Math.PI*2,true)
+        ctx.stroke()
+        //face
+        ctx.beginPath()
+        ctx.strokeStyle = '#FF6EB4'
+        ctx.fillStyle = '#FF83FA'
+        ctx.lineWidth = 6
+        ctx.arc(450,225,25,0,Math.PI*2,true)
+        ctx.fill()
+        ctx.stroke()
+        //mouth
+        ctx.beginPath()
+        ctx.strokeStyle = '#cc0099'
+        ctx.lineWidth = 6
+        ctx.arc(525,230,45,Math.PI*3/4,Math.PI/12,true)
+        ctx.stroke()
+        //nose hole
+        ctx.beginPath()
+        ctx.strokeStyle = '#cc0099'
+        ctx.lineWidth = 6
+        ctx.arc(612,141,3,0,Math.PI*2,true)
+        ctx.stroke()
+        ctx.beginPath()
+        ctx.strokeStyle = '#cc0099'
+        ctx.lineWidth = 6
+        ctx.arc(633,137,3,0,Math.PI*2,true)
+        ctx.stroke()
+        //ears
+        ctx.beginPath()
+        ctx.strokeStyle = '#FF6EB4'
+        ctx.fillStyle = '#FFC0CB'
+        ctx.lineWidth = 6
+        ctx.moveTo(432,150)
+        ctx.lineTo(415,125)
+        ctx.arc(427,115,15,Math.PI*5/6,-Math.PI/6,false)
+        ctx.lineTo(456,136)
+        ctx.fill()
+        ctx.stroke()
+        ctx.beginPath()
+        ctx.strokeStyle = '#FF6EB4'
+        ctx.fillStyle = '#FFC0CB'
+        ctx.lineWidth = 6
+        ctx.moveTo(480,125)
+        ctx.lineTo(470,95)
+        ctx.arc(483,85,15,Math.PI*11/12,-Math.PI/12,false)
+        ctx.lineTo(505,115)
+        ctx.fill()
+        ctx.stroke()
+    </script>
+</body>
+</html>
