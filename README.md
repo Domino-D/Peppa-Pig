@@ -1,3 +1,3 @@
 # Peppa-Pig
-社会宁
+Social Man
 canvas
